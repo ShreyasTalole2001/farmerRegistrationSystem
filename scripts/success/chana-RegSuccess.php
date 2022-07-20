@@ -14,7 +14,7 @@ $query = "SELECT * FROM farmers WHERE adharNo = '$adharNo'";
 $result = mysqli_query($chanaRegDB_Conn,$query);
 $row = mysqli_fetch_array($result);
 
-// print_r($row);
+print_r($row);
 ?>
 <!doctype html>
 <html lang="en">

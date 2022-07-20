@@ -1,6 +1,7 @@
 <?php
-
-new GoodZipArchive('../chana-procurment/chana-NondaniFiles/',    '../zipFiles/output.zip') ;
+// session_start();
+$cropType = $_SESSION['cropType'];
+new GoodZipArchive('../scripts/'.$cropType.'-NondaniFiles',    '../zipFiles/output.zip') ;
 
 
 class GoodZipArchive extends ZipArchive 
