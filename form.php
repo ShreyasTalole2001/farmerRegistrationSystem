@@ -114,7 +114,7 @@ if($_SESSION['crop'] == "chana"){
         </div>
         <h4 style="text-align: center;margin-top: 30px;"> <?php echo $cropName ?> हमीभाव खरेदी नोंदणी 2021 - 2022</h4>
 
-        <form action="./scripts/<?php echo $_SESSION['crop'] ?>-Upload.php" method="post" enctype="multipart/form-data">
+        <form action="./<?php echo $_SESSION['crop'] ?>-script/<?php echo $_SESSION['crop'] ?>-Upload.php" method="post" enctype="multipart/form-data">
 
            
             <div class="row gx-3 gy-2 align-items-center">
